@@ -1,0 +1,51 @@
+ * {
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #myInput {
+    height: 40px;
+    width: 250px;
+  }
+  #image-list li {
+    float: left;
+    width: 50%;
+    list-style: none;
+  }
+  #image-list.two-column li {
+    width:50%; 
+  }
+
+  #image-list.three-column li{
+    width:33.33%; 
+  }
+
+  #image-list.four-column li {
+    width:25%; 
+  }
+  #loader {
+    clear: both;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    display: none;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  #loader.active {
+    display: block;
+  }
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

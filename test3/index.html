@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h2>My Gallery</h2>
+    <input type="radio" name="grid" value="two-column" onclick="checkedFunction()" checked> Two Column
+    <input type="radio" name="grid" value="three-column" onclick="checkedFunction()"> Three Column
+    <input type="radio" name="grid" value="four-column" onclick="checkedFunction()"> Four Column
+
+    <input type="text" id="myInput"  placeholder="Search by names..">
+    <button id="submit" onfocus="getFilter()">Submit</button>
+    <ul id="image-list">
+
+    </ul>
+    <div id="loader"></div>
+  </div>
+  <script src="custom.js"></script>
+</body>
+</html>
